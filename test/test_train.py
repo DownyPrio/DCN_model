@@ -7,12 +7,12 @@ import random
 import time
 
 from tensorflow.python.client import device_lib
-print(device_lib.list_local_devices())
+
 
 list_p=[1]*1000
 list_1=list(map(lambda x:x*random.randrange(1,100),list_p))
 
-list_2=list(map(lambda x:x*random.randrange(1,100),list_p))
+list_2=list(map(lambda x:x*random.randrange(1,100),list_p),"33333333333334")
 
 
 trainSet=np.array([list_1,list_2]).T.reshape((1000,1,2)).astype("float64")
